@@ -1,28 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-const heading = React.createElement(
-  "h1",
-  {
-    id: "title",
-  },
-  "heading 1"
-);
+//JSX?
 
-const headingY = React.createElement(
-  "h2",
-  {
-    id: "title",
-  },
-  "heading 2"
-);
-const container = React.createElement(
-  "div",
-  {
-    id: "container",
-  },
-  [heading, headingY]
-);
-console.log(heading);
+const heading3 = (
+  <h1 id="1" key="title">
+    namasteyyy
+  </h1>
+); //element
+
+//react component
+// 1. functional component - new way
+const Com = () => {
+  return <h1>namaste jiii</h1>;
+};
+// 2. class component - old way
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(container);
+root.render(heading3);
